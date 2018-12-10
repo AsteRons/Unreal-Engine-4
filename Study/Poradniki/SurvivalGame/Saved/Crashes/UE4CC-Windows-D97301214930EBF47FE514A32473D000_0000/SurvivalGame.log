@@ -456,22 +456,3 @@ LogInit: Object subsystem initialized
 [2018.12.10-10.35.03:118][686]LogOutputDevice: Error: [Callstack] 0x00007ffe08f91471 ntdll.dll!UnknownFunction []
 [2018.12.10-10.35.03:118][686]LogOutputDevice: Error: 
 [2018.12.10-10.35.03:129][686]LogStats:                SubmitErrorReport -  0.000 s
-[2018.12.10-10.35.03:733][686]LogStats:                    SendNewReport -  0.605 s
-[2018.12.10-10.35.03:733][686]LogStats:             FDebug::EnsureFailed -  3.165 s
-[2018.12.10-10.35.03:738][686]LogSavePackage: Moving '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Saved/survivalGameModC15323FC40433FB4F183059568B67162.tmp' to '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Content/Blueprints/survivalGameMod.uasset'
-[2018.12.10-10.35.41:891][320]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
-[2018.12.10-10.35.53:182][590]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2018.12.10-10.35.53:255][591]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.SurvivalGame
-[2018.12.10-10.35.53:255][591]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.12.10-10.35.53:255][591]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.20
-[2018.12.10-10.35.53:255][591]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.12.10-10.35.53:255][591]LogTemp: BranchPath = DESKTOP-3O48EON/C/Program Files/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = DESKTOP-3O48EON/C/Program Files/Epic Games/UE_4.20/Engine/Binaries
-[2018.12.10-10.35.53:255][591]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Symulator 3D\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2018.12.10-10.36.09:875][  3]LogSlate: Window 'Project Settings' being destroyed
-[2018.12.10-10.36.09:879][  3]LogSlate: Window 'Project Settings' being destroyed
-[2018.12.10-10.36.11:005][130]LogSavePackage: Moving '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Saved/SurvivalMap91EE099549847E5480B1C79FFEB193F5.tmp' to '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Content/Maps/SurvivalMap.umap'
-[2018.12.10-10.36.11:017][130]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap_BuiltData" FILE="../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Content/Maps/SurvivalMap_BuiltData.uasset" SILENT=true
-[2018.12.10-10.36.11:026][130]LogSavePackage: Moving '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Saved/SurvivalMap_BuiltData2785B8F54C9AC21280AE9EBE23BF06A1.tmp' to '../../../../../../Repozytorium/C/Unreal-Engine-4/Study/Poradniki/SurvivalGame/Content/Maps/SurvivalMap_BuiltData.uasset'
-[2018.12.10-10.36.26:179][944]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/SurvivalGameCharacter.SurvivalGameCharacter
-[2018.12.10-10.36.29:716][306]LogSlate: Window 'SurvivalGameCharacter' being destroyed
-[2018.12.10-10.36.45:525][827]LogSlate: Took 0.001790 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
