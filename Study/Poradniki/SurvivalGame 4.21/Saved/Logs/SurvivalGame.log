@@ -1,4 +1,4 @@
-﻿Log file open, 12/10/18 18:31:13
+﻿Log file open, 12/12/18 17:39:11
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -6,11 +6,12 @@ LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
-LogInit: Display: Running engine for game: SurvivalGame
+LogInit: Display: Running engine without a game
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
+LogInit: Display: Loading recent project file: C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/SurvivalGame.uproject
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.248298
+LogStats: Stats thread started at 0.370016
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +95,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.045s to configure plugins.
+LogStreaming: Display: Took  0.200s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -154,769 +155,427 @@ LogInit: Presizing for max 8388607 objects, including 0 objects not considered b
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:685][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:692][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.10-17.31.13:692][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.10-17.31.13:693][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.10-17.31.13:693][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.10-17.31.13:693][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.12.10-17.31.13:698][  0]LogHAL: Display: Platform has ~ 8 GB [8539287552 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2018.12.10-17.31.13:698][  0]LogInit: Going up to parent DeviceProfile []
-[2018.12.10-17.31.13:698][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.10-17.31.13:698][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2018.12.10-17.31.13:699][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2018.12.10-17.31.13:699][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
-[2018.12.10-17.31.13:699][  0]LogInit: Computer: ZALMANMR
-[2018.12.10-17.31.13:699][  0]LogInit: User: Maciek
-[2018.12.10-17.31.13:699][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.12.10-17.31.13:699][  0]LogInit: High frequency timer resolution =3.906318 MHz
-[2018.12.10-17.31.13:699][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2018.12.10-17.31.13:699][  0]LogMemory: Platform Memory Stats for Windows
-[2018.12.10-17.31.13:699][  0]LogMemory: Process Physical Memory: 103.07 MB used, 103.07 MB peak
-[2018.12.10-17.31.13:699][  0]LogMemory: Process Virtual Memory: 91.66 MB used, 91.66 MB peak
-[2018.12.10-17.31.13:699][  0]LogMemory: Physical Memory: 5893.54 MB used,  2250.16 MB free, 8143.70 MB total
-[2018.12.10-17.31.13:699][  0]LogMemory: Virtual Memory: 484.04 MB used,  8388124.00 MB free, 8388608.00 MB total
-[2018.12.10-17.31.13:720][  0]LogInit: Using OS detected language (en-US).
-[2018.12.10-17.31.13:720][  0]LogInit: Using OS detected locale (en-US).
-[2018.12.10-17.31.13:721][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.12.10-17.31.14:039][  0]LogStreaming: Display: Took  0.319s to InitEngineTextLocalization.
-[2018.12.10-17.31.14:040][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
-[2018.12.10-17.31.14:040][  0]LogWindows: File 'shcore.dll' does not exist
-[2018.12.10-17.31.14:040][  0]LogInit: Setting process to DPI aware
-[2018.12.10-17.31.14:098][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.12.10-17.31.14:098][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.12.10-17.31.14:628][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.10-17.31.14:628][  0]LogD3D11RHI: D3D11 adapters:
-[2018.12.10-17.31.14:658][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.12.10-17.31.14:658][  0]LogD3D11RHI:       3992/0/3815 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.12.10-17.31.14:658][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.12.10-17.31.14:663][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.12.10-17.31.14:663][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.12.10-17.31.14:663][  0]LogWindows: EnumDisplayDevices:
-[2018.12.10-17.31.14:663][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.12.10-17.31.14:664][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.12.10-17.31.14:664][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.12.10-17.31.14:664][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.12.10-17.31.14:664][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2018.12.10-17.31.14:664][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2018.12.10-17.31.14:664][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2018.12.10-17.31.14:664][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2018.12.10-17.31.14:664][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.12.10-17.31.14:665][  0]LogD3D11RHI:   Driver Version: 391.35 (internal:23.21.13.9135, unified:391.35)
-[2018.12.10-17.31.14:665][  0]LogD3D11RHI:      Driver Date: 3-23-2018
-[2018.12.10-17.31.14:665][  0]LogRHI: Texture pool is 2794 MB (70% of 3992 MB)
-[2018.12.10-17.31.14:675][  0]LogD3D11RHI: Async texture creation enabled
-[2018.12.10-17.31.14:694][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.12.10-17.31.14:989][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.12.10-17.31.14:999][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.12.10-17.31.15:009][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.12.10-17.31.15:020][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.12.10-17.31.15:048][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.12.10-17.31.15:058][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.12.10-17.31.15:068][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.12.10-17.31.15:079][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.12.10-17.31.15:084][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:144][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.10-17.31.15:145][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.12.10-17.31.15:202][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.10-17.31.15:202][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.10-17.31.15:221][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.10-17.31.15:221][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.10-17.31.15:230][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.12.10-17.31.15:240][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.12.10-17.31.15:249][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.12.10-17.31.15:269][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.12.10-17.31.15:304][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.10-17.31.15:304][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.10-17.31.15:304][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.12.10-17.31.15:384][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Intermediate/Shaders/WorkingDirectory/11516/).
-[2018.12.10-17.31.15:384][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Maciek/AppData/Local/Temp/UnrealShaderWorkingDir/3E06EB3E4B478CB055306DB0A09988B9/'.
-[2018.12.10-17.31.15:386][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.12.10-17.31.15:386][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.12.10-17.31.15:386][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.12.10-17.31.16:940][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.12.10-17.31.17:018][  0]LogDerivedDataCache: Loaded boot cache 0.08s 86MB C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.10-17.31.17:018][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2018.12.10-17.31.17:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.12.10-17.31.17:018][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.12.10-17.31.17:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.10-17.31.17:019][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.12.10-17.31.17:032][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.12.10-17.31.17:032][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.10-17.31.17:032][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2018.12.10-17.31.17:043][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Maciek/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.12.10-17.31.17:043][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.12.10-17.31.17:043][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.12.10-17.31.17:063][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.12.10-17.31.17:064][  0]LogSlate: Using FreeType 2.6.0
-[2018.12.10-17.31.17:070][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.12.10-17.31.17:251][  0]LogAssetRegistry: FAssetRegistry took 0.0304 seconds to start up
-[2018.12.10-17.31.17:513][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.10-17.31.17:683][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.12.10-17.31.17:686][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.12.10-17.31.17:686][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.12.10-17.31.17:686][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.12.10-17.31.17:686][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.12.10-17.31.17:699][  0]LogNetVersion: SurvivalGame 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 565486502)
-[2018.12.10-17.31.18:149][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.050484 seconds
-[2018.12.10-17.31.18:156][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2018.12.10-17.31.18:156][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
-[2018.12.10-17.31.18:156][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.12.10-17.31.21:137][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.12.10-17.31.21:155][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.12.10-17.31.21:735][  0]SourceControl: Source control is disabled
-[2018.12.10-17.31.21:735][  0]SourceControl: Source control is disabled
-[2018.12.10-17.31.21:736][  0]SourceControl: Source control is disabled
-[2018.12.10-17.31.21:736][  0]SourceControl: Source control is disabled
-[2018.12.10-17.31.21:909][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.12.10-17.31.21:960][  0]LogOcInput: OculusInput pre-init called
-[2018.12.10-17.31.22:089][  0]LogEngine: Initializing Engine...
-[2018.12.10-17.31.22:089][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.10-17.31.22:090][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.10-17.31.22:090][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.10-17.31.22:090][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.10-17.31.22:090][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.10-17.31.22:318][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.12.10-17.31.22:328][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.12.10-17.31.22:346][  0]LogInit: XAudio2 using 'Głośniki (Razer Surround Audio Controller)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2018.12.10-17.31.22:355][  0]LogInit: FAudioDevice initialized.
-[2018.12.10-17.31.22:355][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.12.10-17.31.22:484][  0]LogDerivedDataCache: Saved boot cache 0.13s 86MB C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.10-17.31.22:490][  0]LogInit: Texture streaming: Enabled
-[2018.12.10-17.31.22:505][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.12.10-17.31.22:513][  0]LogInit: Transaction tracking system initialized
-[2018.12.10-17.31.22:529][  0]BlueprintLog: New page: Editor Load
-[2018.12.10-17.31.22:690][  0]LocalizationService: Localization service is disabled
-[2018.12.10-17.31.23:078][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/' took 0.01s
-[2018.12.10-17.31.23:078][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.12.10-17.31.23:078][  0]LogCook: Display: Mobile HDR setting 1
-[2018.12.10-17.31.23:078][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.12.10-17.31.23:078][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.10-17.31.23:078][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.10-17.31.23:079][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.10-17.31.23:079][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.10-17.31.23:298][  0]SourceControl: Source control is disabled
-[2018.12.10-17.31.23:298][  0]Cmd: MAP LOAD FILE="C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Maps/SurvivalMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.12.10-17.31.23:298][  0]LightingResults: New page: Lighting Build
-[2018.12.10-17.31.23:300][  0]MapCheck: New page: Map Check
-[2018.12.10-17.31.23:300][  0]LightingResults: New page: Lighting Build
-[2018.12.10-17.31.23:492][  0]LogAIModule: Creating AISystem for world SurvivalMap
-[2018.12.10-17.31.23:496][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.12.10-17.31.23:515][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.12.10-17.31.23:515][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.115ms to complete.
-[2018.12.10-17.31.23:515][  0]LogFileHelpers: Loading map 'SurvivalMap' took 0.218
-[2018.12.10-17.31.23:898][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.31.23:905][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.31.23:910][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.31.23:915][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.31.23:987][  0]LogCollectionManager: Loaded 0 collections in 0.001111 seconds
-[2018.12.10-17.31.24:083][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Collections/' took 0.01s
-[2018.12.10-17.31.24:083][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Developers/Maciek/Collections/' took 0.01s
-[2018.12.10-17.31.24:083][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Collections/' took 0.01s
-[2018.12.10-17.31.24:083][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.12.10-17.31.24:092][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2651 classes and 620 folders.
-[2018.12.10-17.31.24:144][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.12.10-17.31.24:204][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:222][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:223][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:224][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:234][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:251][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:253][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:254][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:255][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:265][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:266][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:267][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:268][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:269][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:270][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:279][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:280][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:281][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:291][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:292][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:293][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:294][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:295][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:296][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:306][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:307][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.10-17.31.24:577][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.12.10-17.31.24:630][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2018.12.10-17.31.24:920][  0]LogSlate: Took 0.006541 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.12.10-17.31.24:924][  0]LogSlate: Took 0.002966 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.12.10-17.31.24:961][  0]LogSlate: Took 0.011234 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.12.10-17.31.25:222][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
-[2018.12.10-17.31.25:467][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.12.10-17.31.25:517][  0]LogSlate: Window 'Tutorials' being destroyed
-[2018.12.10-17.31.25:543][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.12.10-17.31.25:543][  0]LogLoad: (Engine Initialization) Total time: 13.20 seconds
-[2018.12.10-17.31.25:543][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.12.10-17.31.25:623][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.12.10-17.31.25:641][  0]LogSlate: Took 0.000114 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.12.10-17.31.25:665][  1]LogAssetRegistry: Asset discovery search completed in 8.4347 seconds
-[2018.12.10-17.31.25:671][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.12.10-17.31.25:671][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000037 seconds (updated 0 objects)
-[2018.12.10-17.32.24:023][984]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.10-17.32.24:089][992]LogTemp: Repeating last play command: Selected Viewport
-[2018.12.10-17.32.24:093][992]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap' with GeneratedClass '/Game/Maps/SurvivalMap.SurvivalMap_C' with ClassGeneratedBy '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap'
-[2018.12.10-17.32.24:093][992]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.12.10-17.32.24:119][992]PIE: New page: PIE session: SurvivalMap (Dec 10, 2018, 7:32:24 PM)
-[2018.12.10-17.32.24:154][992]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_SurvivalMap
-[2018.12.10-17.32.24:157][992]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002796s)
-[2018.12.10-17.32.24:157][992]LogAIModule: Creating AISystem for world SurvivalMap
-[2018.12.10-17.32.24:158][992]LogPlayLevel: PIE: World Init took: (0.000550s)
-[2018.12.10-17.32.24:158][992]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/SurvivalMap.SurvivalMap to /Game/Maps/UEDPIE_0_SurvivalMap.SurvivalMap (0.003571s)
-[2018.12.10-17.32.24:182][992]LogInit: XAudio2 using 'Głośniki (Razer Surround Audio Controller)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2018.12.10-17.32.24:187][992]LogInit: FAudioDevice initialized.
-[2018.12.10-17.32.24:240][992]LogLoad: Game class is 'SurvivalGameMod_C'
-[2018.12.10-17.32.24:249][992]LogWorld: Bringing World /Game/Maps/UEDPIE_0_SurvivalMap.SurvivalMap up for play (max tick rate 0) at 2018.12.10-18.32.24
-[2018.12.10-17.32.24:249][992]LogWorld: Bringing up level for play took: 0.000649
-[2018.12.10-17.32.24:328][992]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
-[2018.12.10-17.32.24:405][992]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_SurvivalMap -0.524
-[2018.12.10-17.32.24:405][992]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap' with GeneratedClass '/Game/Maps/SurvivalMap.SurvivalMap_C' with ClassGeneratedBy '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap'
-[2018.12.10-17.32.30:050][634]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap' with GeneratedClass '/Game/Maps/SurvivalMap.SurvivalMap_C' with ClassGeneratedBy '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap'
-[2018.12.10-17.32.30:050][634]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.32.30:079][634]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.12.10-17.32.30:079][634]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap' with GeneratedClass '/Game/Maps/SurvivalMap.SurvivalMap_C' with ClassGeneratedBy '/Game/Maps/SurvivalMap.SurvivalMap:PersistentLevel.SurvivalMap'
-[2018.12.10-17.32.30:099][634]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.10-17.32.30:156][638]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2018.12.10-17.32.30:481][677]Cmd: SELECT NONE
-[2018.12.10-17.32.31:713][820]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.10-17.32.31:841][829]LogSlate: Window 'SurvivalGame - Unreal Editor' being destroyed
-[2018.12.10-17.32.32:101][830]Cmd: QUIT_EDITOR
-[2018.12.10-17.32.32:119][830]LogExit: Preparing to exit.
-[2018.12.10-17.32.33:189][830]LogExit: Editor shut down
-[2018.12.10-17.32.33:189][830]LogExit: Transaction tracking system shut down
-[2018.12.10-17.32.33:297][830]LogExit: Object subsystem successfully closed.
-[2018.12.10-17.32.33:311][830]LogShaderCompilers: Display: Shaders left to compile 0
-[2018.12.10-17.32.33:313][830]LogD3D11RHI: Shutdown
-[2018.12.10-17.32.33:313][830]LogD3D11RHI: CleanupD3DDevice
-[2018.12.10-17.32.33:314][830]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.12.10-17.32.33:322][830]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (626)
-[2018.12.10-17.32.33:322][830]LogModuleManager: Shutting down and abandoning module Voice (624)
-[2018.12.10-17.32.33:322][830]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (622)
-[2018.12.10-17.32.33:322][830]LogModuleManager: Shutting down and abandoning module SceneOutliner (620)
-[2018.12.10-17.32.33:322][830]LogModuleManager: Shutting down and abandoning module AddContentDialog (618)
-[2018.12.10-17.32.33:323][830]LogModuleManager: Shutting down and abandoning module WidgetCarousel (617)
-[2018.12.10-17.32.33:323][830]LogModuleManager: Shutting down and abandoning module EditorWidgets (614)
-[2018.12.10-17.32.33:323][830]LogModuleManager: Shutting down and abandoning module CollectionManager (612)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module StatsViewer (610)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module FoliageEdit (608)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module LandscapeEditor (606)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MeshPaintMode (604)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (602)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ActorPickerMode (600)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module GeometryMode (598)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module TextureAlignMode (596)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module BspMode (594)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (592)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (590)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AutomationWorker (588)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (586)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (584)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (582)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module PlacementMode (581)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MaterialEditor (580)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (576)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (574)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (572)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (570)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module WebMMedia (568)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (566)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (564)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SequenceRecorder (563)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (560)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (558)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (556)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (554)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (552)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (550)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (548)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (546)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (544)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (542)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module CharacterAI (540)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SmartSnapping (538)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SessionServices (536)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ViewportSnapping (534)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ViewportInteraction (532)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module ClothPainter (530)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (529)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module LogVisualizer (526)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module IntroTutorials (524)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (523)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (520)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (518)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (516)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (514)
-[2018.12.10-17.32.33:324][830]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (513)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (510)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (508)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (506)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (504)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (502)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module InputBindingEditor (500)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module MergeActors (498)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (496)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module LocalizationService (495)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module HardwareTargeting (492)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (490)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module UndoHistory (488)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module XmlParser (486)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module Blutility (484)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (482)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (481)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (478)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module SettingsEditor (476)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module ProjectLauncher (474)
-[2018.12.10-17.32.33:849][830]LogModuleManager: Shutting down and abandoning module SessionFrontend (472)
-[2018.12.10-17.32.33:850][830]LogModuleManager: Shutting down and abandoning module ProfilerClient (470)
-[2018.12.10-17.32.33:850][830]LogModuleManager: Shutting down and abandoning module DeviceManager (468)
-[2018.12.10-17.32.33:850][830]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (467)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AutomationController (464)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AutomationWindow (462)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module Layers (460)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (458)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module DetailCustomizations (456)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module PackagesDialog (454)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module Persona (452)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (451)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AnimGraph (449)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module Kismet (446)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module GraphEditor (444)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module ClassViewer (442)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module Toolbox (440)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module ModuleUI (438)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module MovieSceneTools (436)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module OutputLog (434)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module GammaUI (432)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module Documentation (430)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (428)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module MovieScene (426)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (424)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module LauncherPlatform (422)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AnalyticsET (420)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module PortalServices (418)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module PortalRpc (416)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module MessagingRpc (414)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AIModule (412)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module GameplayDebugger (411)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module AITestSuite (409)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module NavigationSystem (407)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module DesktopPlatform (404)
-[2018.12.10-17.32.33:900][830]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (402)
-[2018.12.10-17.32.33:902][830]LogModuleManager: Shutting down and abandoning module ProfilerService (400)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module TaskGraph (398)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module SteamVRController (396)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (394)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (392)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module OculusInput (390)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (388)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module EditableMesh (386)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (384)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module CableComponent (382)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module AudioCapture (380)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (378)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module AndroidPermission (376)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (374)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (372)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module MediaCompositing (370)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module LinearTimecode (368)
-[2018.12.10-17.32.33:980][830]LogModuleManager: Shutting down and abandoning module ImgMedia (366)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module HTML5Networking (364)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (362)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (360)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module BackChannel (358)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module AppleVision (356)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (354)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module AppleImageUtils (352)
-[2018.12.10-17.32.33:982][830]LogModuleManager: Shutting down and abandoning module AlembicImporter (350)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module AlembicLibrary (349)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module GeometryCache (348)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (347)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module VariantManagerContent (342)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (340)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (338)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PluginBrowser (336)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (334)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PolygonModeling (332)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module MeshEditor (330)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (328)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module CryptoKeys (326)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (324)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (322)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module UObjectPlugin (320)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (318)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (316)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module GitSourceControl (314)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module SourceControl (313)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (310)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (308)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (306)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (304)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (302)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (300)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module Paper2DEditor (298)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module MeshPaint (297)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (294)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (292)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module PhysXVehicles (290)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module OculusEditor (288)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
-[2018.12.10-17.32.33:983][830]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
-[2018.12.10-17.32.34:083][830]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module DataValidation (270)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module MainFrame (262)
-[2018.12.10-17.32.34:183][830]LogModuleManager: Shutting down and abandoning module HotReload (261)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module TreeMap (255)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module Paper2D (248)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
-[2018.12.10-17.32.34:184][830]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (244)
-[2018.12.10-17.32.34:185][830]LogModuleManager: Shutting down and abandoning module WmfMedia (242)
-[2018.12.10-17.32.34:185][830]LogModuleManager: Shutting down and abandoning module Media (241)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module PacketHandler (238)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (236)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (234)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module MediaAssets (232)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module Overlay (230)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module OverlayEditor (229)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module VREditor (226)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module StringTableEditor (224)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (222)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (220)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module FunctionalTesting (218)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (216)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (215)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module UMG (212)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module UMGEditor (211)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module Sequencer (210)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module MessageLog (207)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module SlateReflector (202)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module Slate (200)
-[2018.12.10-17.32.34:190][830]LogModuleManager: Shutting down and abandoning module EditorStyle (198)
-[2018.12.10-17.32.34:191][830]LogModuleManager: Shutting down and abandoning module MRMesh (196)
-[2018.12.10-17.32.34:191][830]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
-[2018.12.10-17.32.34:191][830]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
-[2018.12.10-17.32.34:191][830]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module Networking (188)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module Core (186)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module LevelSequence (184)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module KismetCompiler (182)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module MeshUtilities (180)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (179)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (178)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (177)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (175)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (173)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (171)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module MaterialBaking (167)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
-[2018.12.10-17.32.34:192][830]LogModuleManager: Shutting down and abandoning module DerivedDataCache (160)
-[2018.12.10-17.32.34:537][830]LogDerivedDataCache: Shutdown
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module XGEController (158)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TargetPlatform (156)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (155)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (153)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (151)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (149)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (147)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (145)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (143)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (141)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (139)
-[2018.12.10-17.32.34:537][830]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (137)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module ImageWrapper (136)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (133)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (131)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (129)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (127)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (125)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (119)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (117)
-[2018.12.10-17.32.34:538][830]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (115)
-[2018.12.10-17.32.34:539][830]LogModuleManager: Shutting down and abandoning module Messaging (113)
-[2018.12.10-17.32.34:539][830]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
-[2018.12.10-17.32.34:539][830]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (109)
-[2018.12.10-17.32.34:539][830]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (107)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (105)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (103)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (101)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (99)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (97)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (95)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (93)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (91)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (89)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module InputCore (86)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module Settings (84)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module SteamVR (80)
-[2018.12.10-17.32.34:544][830]LogHMD: Freeing OpenVRDLLHandle.
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
-[2018.12.10-17.32.34:544][830]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
-[2018.12.10-17.32.34:545][830]LogModuleManager: Shutting down and abandoning module XMPP (63)
-[2018.12.10-17.32.34:545][830]LogModuleManager: Shutting down and abandoning module WebSockets (62)
-[2018.12.10-17.32.34:555][830]LogModuleManager: Shutting down and abandoning module HTTP (59)
-[2018.12.10-17.32.34:555][830]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.12.10-17.32.34:555][830]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B20BE5FDF-4A48-9C06-50B3-489D94606A4B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=2eb3c78d47981b80d6d740b8e9333bcd%7Cdbad1f31c481485bbf3df07a1012ca34%7C0fc5d510-6fb9-49c7-a55e-fd67e579fe91&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.12.10-17.32.34:572][830]LogModuleManager: Shutting down and abandoning module SSL (58)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
-[2018.12.10-17.32.34:573][830]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
-[2018.12.10-17.32.34:573][830]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.12.10-17.32.34:574][830]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.12.10-17.32.34:578][830]LogExit: Exiting.
-[2018.12.10-17.32.34:590][830]Log file closed, 12/10/18 18:32:34
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:914][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.12-16.39.13:972][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.12-16.39.13:973][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.12-16.39.13:973][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.12-16.39.13:973][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.12-16.39.13:973][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.13:973][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.12-16.39.13:973][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.12-16.39.13:980][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.12-16.39.13:980][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.12.12-16.39.14:028][  0]LogHAL: Display: Platform has ~ 8 GB [8539287552 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2018.12.12-16.39.14:050][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.12-16.39.14:050][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.12-16.39.14:050][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Scalability.ini]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2018.12.12-16.39.14:051][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2018.12.12-16.39.14:051][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Config/Windows/Engine.ini]
+[2018.12.12-16.39.14:074][  0]LogInit: Computer: ZALMANMR
+[2018.12.12-16.39.14:074][  0]LogInit: User: Maciek
+[2018.12.12-16.39.14:074][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.12.12-16.39.14:074][  0]LogInit: High frequency timer resolution =3.906308 MHz
+[2018.12.12-16.39.14:074][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2018.12.12-16.39.14:074][  0]LogMemory: Platform Memory Stats for Windows
+[2018.12.12-16.39.14:074][  0]LogMemory: Process Physical Memory: 104.10 MB used, 104.10 MB peak
+[2018.12.12-16.39.14:074][  0]LogMemory: Process Virtual Memory: 91.66 MB used, 91.66 MB peak
+[2018.12.12-16.39.14:074][  0]LogMemory: Physical Memory: 5459.90 MB used,  2683.80 MB free, 8143.70 MB total
+[2018.12.12-16.39.14:074][  0]LogMemory: Virtual Memory: 484.04 MB used,  8388124.00 MB free, 8388608.00 MB total
+[2018.12.12-16.39.14:915][  0]LogInit: Using OS detected language (en-US).
+[2018.12.12-16.39.14:915][  0]LogInit: Using OS detected locale (en-US).
+[2018.12.12-16.39.14:987][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.12.12-16.39.15:671][  0]LogStreaming: Display: Took  0.742s to InitEngineTextLocalization.
+[2018.12.12-16.39.15:688][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
+[2018.12.12-16.39.15:688][  0]LogWindows: File 'shcore.dll' does not exist
+[2018.12.12-16.39.15:688][  0]LogInit: Setting process to DPI aware
+[2018.12.12-16.39.16:739][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.12-16.39.16:739][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.12-16.39.17:380][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.12-16.39.17:380][  0]LogD3D11RHI: D3D11 adapters:
+[2018.12.12-16.39.17:410][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.12.12-16.39.17:410][  0]LogD3D11RHI:       3992/0/3815 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.12.12-16.39.17:410][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.12.12-16.39.17:424][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.12.12-16.39.17:424][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.12.12-16.39.17:424][  0]LogWindows: EnumDisplayDevices:
+[2018.12.12-16.39.17:425][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.12.12-16.39.17:425][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2018.12.12-16.39.17:425][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.12.12-16.39.17:425][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.12.12-16.39.17:425][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2018.12.12-16.39.17:425][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.12.12-16.39.17:425][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.12.12-16.39.17:426][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.12.12-16.39.17:426][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.12.12-16.39.17:426][  0]LogD3D11RHI:   Driver Version: 391.35 (internal:23.21.13.9135, unified:391.35)
+[2018.12.12-16.39.17:426][  0]LogD3D11RHI:      Driver Date: 3-23-2018
+[2018.12.12-16.39.17:426][  0]LogRHI: Texture pool is 2794 MB (70% of 3992 MB)
+[2018.12.12-16.39.17:442][  0]LogD3D11RHI: Async texture creation enabled
+[2018.12.12-16.39.17:664][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.12.12-16.39.18:525][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.12-16.39.18:547][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.12.12-16.39.18:558][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.12.12-16.39.18:569][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.12.12-16.39.18:620][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.12.12-16.39.18:646][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.12.12-16.39.18:661][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.12.12-16.39.18:682][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.12.12-16.39.18:697][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:813][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.12-16.39.18:882][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.12-16.39.18:992][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.12-16.39.18:992][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.12-16.39.19:018][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.12-16.39.19:018][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.12-16.39.19:040][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.12-16.39.19:051][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.12-16.39.19:062][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.12-16.39.19:075][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.12-16.39.19:137][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.12-16.39.19:137][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.12-16.39.19:137][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.12.12-16.39.19:848][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Intermediate/Shaders/WorkingDirectory/10052/).
+[2018.12.12-16.39.19:848][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Maciek/AppData/Local/Temp/UnrealShaderWorkingDir/807D496F4DF9046A46B0B8AFB3C1EFEE/'.
+[2018.12.12-16.39.19:859][  0]LogXGEController: Cleaning working directory: C:/Users/Maciek/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.12-16.39.19:860][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.12.12-16.39.19:860][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.12.12-16.39.19:860][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.12-16.39.21:738][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.12-16.39.21:985][  0]LogDerivedDataCache: Loaded boot cache 0.25s 86MB C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.12-16.39.21:985][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2018.12.12-16.39.21:986][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.12-16.39.21:986][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.12-16.39.21:986][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.12-16.39.21:986][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.12.12-16.39.22:067][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.12.12-16.39.22:067][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.12-16.39.22:067][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2018.12.12-16.39.22:079][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Maciek/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.12.12-16.39.22:079][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.12-16.39.22:079][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.12-16.39.22:122][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.12.12-16.39.22:168][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.12-16.39.22:321][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.12.12-16.39.22:961][  0]LogAssetRegistry: FAssetRegistry took 0.0353 seconds to start up
+[2018.12.12-16.39.28:335][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.12-16.39.29:473][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.12.12-16.39.29:679][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.12.12-16.39.29:679][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.12.12-16.39.29:679][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.12-16.39.29:679][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.12-16.39.30:064][  0]LogNetVersion: SurvivalGame 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 565486502)
+[2018.12.12-16.39.33:472][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.080987 seconds
+[2018.12.12-16.39.33:494][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2018.12.12-16.39.33:494][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
+[2018.12.12-16.39.33:494][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.12-16.39.40:174][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.12-16.39.40:200][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.12-16.39.41:781][  0]SourceControl: Source control is disabled
+[2018.12.12-16.39.41:781][  0]SourceControl: Source control is disabled
+[2018.12.12-16.39.41:839][  0]SourceControl: Source control is disabled
+[2018.12.12-16.39.41:853][  0]SourceControl: Source control is disabled
+[2018.12.12-16.39.43:347][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.12-16.39.43:454][  0]LogOcInput: OculusInput pre-init called
+[2018.12.12-16.39.44:225][  0]LogEngine: Initializing Engine...
+[2018.12.12-16.39.44:255][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.12-16.39.44:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.12-16.39.44:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.12-16.39.44:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.12-16.39.44:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.12-16.39.44:978][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.12-16.39.45:331][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.12-16.39.45:397][  0]LogInit: XAudio2 using 'Głośniki (Razer Surround Audio Controller)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2018.12.12-16.39.45:465][  0]LogInit: FAudioDevice initialized.
+[2018.12.12-16.39.45:466][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.12-16.39.45:580][  0]LogDerivedDataCache: Saved boot cache 0.11s 71MB C:/Users/Maciek/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.12-16.39.45:585][  0]LogInit: Texture streaming: Enabled
+[2018.12.12-16.39.45:652][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.12-16.39.45:769][  0]LogInit: Transaction tracking system initialized
+[2018.12.12-16.39.46:016][  0]BlueprintLog: New page: Editor Load
+[2018.12.12-16.39.46:862][  0]LocalizationService: Localization service is disabled
+[2018.12.12-16.39.49:806][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/' took 0.01s
+[2018.12.12-16.39.49:806][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.12-16.39.49:806][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.12-16.39.49:806][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.12-16.39.49:806][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.12-16.39.49:806][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.12-16.39.49:806][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.12-16.39.49:806][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.12-16.39.53:285][  0]SourceControl: Source control is disabled
+[2018.12.12-16.39.53:294][  0]Cmd: MAP LOAD FILE="C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Maps/SurvivalMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.12-16.39.53:305][  0]LightingResults: New page: Lighting Build
+[2018.12.12-16.39.53:409][  0]MapCheck: New page: Map Check
+[2018.12.12-16.39.53:409][  0]LightingResults: New page: Lighting Build
+[2018.12.12-16.39.54:334][  0]LogAIModule: Creating AISystem for world SurvivalMap
+[2018.12.12-16.39.54:729][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.12-16.39.54:811][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.12-16.39.54:820][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.195ms to complete.
+[2018.12.12-16.39.54:820][  0]LogFileHelpers: Loading map 'SurvivalMap' took 1.534
+[2018.12.12-16.39.56:049][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.12-16.39.56:056][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.12-16.39.56:062][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.12-16.39.56:067][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.12-16.39.56:171][  0]LogCollectionManager: Loaded 0 collections in 0.001783 seconds
+[2018.12.12-16.39.56:250][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Saved/Collections/' took 0.01s
+[2018.12.12-16.39.56:250][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Developers/Maciek/Collections/' took 0.01s
+[2018.12.12-16.39.56:250][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Maciek/Desktop/Unreal-Engine-4/Study/Poradniki/SurvivalGame 4.21/Content/Collections/' took 0.00s
+[2018.12.12-16.39.56:250][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.12.12-16.39.56:270][  0]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 2651 classes and 620 folders.
+[2018.12.12-16.39.56:334][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.12-16.39.56:427][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:495][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:497][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:498][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:507][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:508][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:510][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:511][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:512][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:530][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:531][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:532][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:533][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:534][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:536][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:552][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:553][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:554][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:564][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:565][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:566][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:567][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:568][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:570][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:579][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.56:580][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.12-16.39.57:183][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.12.12-16.39.57:227][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2018.12.12-16.39.57:609][  0]LogSlate: Took 0.020553 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.12-16.39.57:664][  0]LogSlate: Took 0.046086 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.12-16.39.57:717][  0]LogSlate: Took 0.011017 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.12-16.39.58:186][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2018.12.12-16.39.58:615][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.12-16.39.58:686][  0]LogSlate: Window 'Tutorials' being destroyed
+[2018.12.12-16.39.58:740][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.12.12-16.39.58:740][  0]LogLoad: (Engine Initialization) Total time: 58.65 seconds
+[2018.12.12-16.39.58:740][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.12.12-16.39.58:876][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.12.12-16.39.58:933][  0]LogSlate: Took 0.013571 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.12-16.39.59:017][  1]LogAssetRegistry: Asset discovery search completed in 36.0802 seconds
+[2018.12.12-16.39.59:019][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.12.12-16.39.59:019][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000038 seconds (updated 0 objects)
+[2018.12.12-16.40.02:400][385]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.12-16.40.02:562][404]LogSlate: Took 0.000140 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.12-16.40.02:567][404]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/SurvivalGameCharacter.SurvivalGameCharacter
+[2018.12.12-16.40.03:508][404]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 117 classes and 0 folders.
+[2018.12.12-16.40.05:000][404]LogSlate: Took 0.012206 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.12-16.40.05:256][405]LogSlate: Took 0.000710 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.12.12-16.40.17:948][753]LogSlate: Window 'SurvivalGameCharacter*' being destroyed
+[2018.12.12-16.40.17:951][753]LogSlate: Window 'SurvivalGameCharacter*' being destroyed
